@@ -1,0 +1,185 @@
+@import '../../styles/color.scss';
+
+.container {
+  background-color: $TERTIARY_GREY;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 0 24px;
+  position: relative;
+  &:hover {
+    .backArrow {
+      opacity: 1;
+    }
+  }
+  .sideBarWrapper {
+    padding: 0 32px;
+  }
+  .logo {
+    height: 40px;
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    margin-bottom: 36px;
+    @media screen and(max-width:768px) {
+      margin-bottom: 12px;
+    }
+    > span {
+      color: $PRIMARY_BUTTON;
+      font-weight: 700;
+    }
+  }
+}
+.list {
+  width: 100%;
+  padding: 0;
+  background-color: $TERTIARY_GREY;
+}
+.listItmebutton {
+  padding: 0 !important;
+  display: block;
+  &:hover {
+    background-color: unset !important;
+  }
+}
+.listItemButtonWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.listItemIcon {
+  margin-right: 16px;
+  min-width: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listItemTextWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid $SECONDARY_GREY;
+  padding: 16px 0;
+}
+.listItemText {
+  font-size: 14px;
+  line-height: 16px;
+  color: $TERTIARY_BLACK;
+  font-weight: 500;
+}
+.expandImg {
+  width: 10px;
+  display: inline-block;
+  &.active {
+    transform: rotate(180deg);
+  }
+}
+.menuWrapper {
+  padding-left: 40px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  &.active {
+    height: initial;
+    opacity: 1;
+    visibility: visible;
+  }
+  .submenuWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0;
+  }
+  .subMenuTitle {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: $PRIMARY_BLACK;
+    font-weight: 500;
+  }
+}
+.submenuWrapper {
+  padding-left: 24px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  .submenuBlock {
+    margin-bottom: 32px;
+  }
+  .submenu {
+    ul {
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 16px 0;
+        list-style: none;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: $TERTIARY_BLACK;
+        cursor: pointer;
+        &.active {
+          color: #0099cc;
+        }
+      }
+    }
+  }
+  &.active {
+    height: initial;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.backArrow {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  @media screen and(max-width:600px) {
+    display: none;
+  }
+}
+.boxContainer {
+  display: flex;
+  padding-left: 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 0;
+  z-index: 999;
+  transform: translateX(-250px);
+  transition: all 0.3s ease-in-out;
+  &.sideBarOpen {
+    transform: translateX(0);
+  }
+  @media screen and(max-width:768px) {
+    display: none;
+  }
+  > nav > div > div {
+    border: 0 !important;
+  }
+}
+.responsiveDrawer {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+}
+.desktopDrawer {
+  display: block;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}

@@ -1,0 +1,197 @@
+@import '../../styles/color.scss';
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  color: $PRIMARY_BUTTON;
+  cursor: pointer;
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+}
+
+.untitle {
+  color: $PRIMARY_GREY;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch {
+  margin-right: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left-container {
+  width: 70%;
+}
+
+.right-container {
+  width: 30%;
+  display: flex;
+}
+
+.img {
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.select {
+  width: 100px;
+}
+
+.relationship-container {
+  width: 100%;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.relationship-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.relationship-heading {
+  font-size: 15px;
+}
+
+.note {
+  color: $PRIMARY_GREY;
+}
+
+.tab-nav {
+  color: 'black' !important;
+  text-transform: none !important;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.save {
+  margin-right: 10px !important;
+}
+
+.button-wrap {
+  display: flex;
+  align-items: 'flex-end';
+  justify-content: flex-end;
+  height: 66%;
+}
+
+.switchContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textarea-custom {
+  resize: none !important;
+  height: 304.62px !important;
+  border-radius: 4px;
+  padding: 10px;
+  &:focus {
+    outline: none;
+    border: 1px solid $PRIMARY_BUTTON;
+  }
+}
+
+.autocomplete-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.custom-label-container {
+  display: flex;
+}
+
+.relationship-mapping-container {
+  display: flex;
+  justify-content: flex-start;
+  max-height: 500px;
+  overflow: auto;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.relationship-label {
+  color: black;
+}
+
+.relationship-table {
+  width: 100%;
+  text-align: left;
+}
+
+.value-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+.user--container {
+  margin-top: 30px;
+  height: 360px;
+  overflow: auto;
+}
+
+.values-title {
+  width: 100% !important;
+  cursor: pointer;
+  padding-left: 7px;
+}
+
+.values-table-container {
+  min-height: 64vh;
+  overflow: auto;
+}
+
+.form-container {
+  height: 593px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-options {
+  width: 50%;
+  text-align: right;
+}
+
+@media screen and (max-width: 1120px) {
+  .container {
+    flex-direction: column !important;
+
+    .left-container {
+      width: 100%;
+    }
+    .right-container {
+      width: 100%;
+      display: flex;
+      margin-top: 50px;
+    }
+  }
+  .form-container {
+    height: auto;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../styles/color.scss';
+@import '../../styles/vars.scss';
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+}
+
+.label {
+  font-weight: 600;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+.textArea {
+  padding: 12px 8px;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 16px;
+  resize: vertical;
+  border-radius: 3px;
+  &:focus {
+    outline: none;
+    border: 1px solid $PRIMARY_BUTTON;
+  }
+  &:hover {
+    border: 1px solid black;
+  }
+}
+.errorMsg {
+  font-size: 14px;
+  color: $ERROR_COLOR;
+  margin-top: 2px;
+}

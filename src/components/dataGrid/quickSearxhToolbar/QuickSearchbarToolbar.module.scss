@@ -1,0 +1,39 @@
+@import '../../../styles/color.scss';
+
+.container__QuickSearchtoolbar--images {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 30px;
+  align-items: center;
+  margin-top: 15px;
+  padding-right: 16px;
+}
+
+.QuickSearchbarTool--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__QuickSearchtoolbar--images > div {
+  display: flex;
+  justify-content: center;
+}
+.QuickSearchbarTool--container--input {
+  height: 40px;
+  width: 360px;
+  border-radius: 40px !important;
+
+  // margin-bottom: -55px;
+  // background-color: red;
+}
+.container__QuickSearchtoolbar--images > div > img {
+  padding-right: 10px;
+  margin-top: 14px;
+}
+.icon {
+  color: $PRIMARY_BLACK;
+  width: 18;
+  height: 18;
+  cursor: pointer;
+}

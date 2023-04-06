@@ -1,0 +1,44 @@
+.label {
+  margin-right: 10px;
+}
+.select {
+  border: none;
+  width: 60px;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+.container__QuickSearchtoolbar--images {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  height: 30px;
+  align-items: center;
+  margin-top: 15px;
+  padding-right: 16px;
+}
+.img {
+  cursor: pointer;
+}
+.container {
+  margin-top: -90px;
+  padding-top: 10px;
+  margin-right: 200px;
+}
+
+.select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('../../../public/images/arrowDown.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 1.5em auto, 100%;
+}
+.pagination--slot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+}

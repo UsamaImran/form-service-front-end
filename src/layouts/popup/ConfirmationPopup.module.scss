@@ -1,0 +1,6 @@
+@import '../../styles/mixin.scss';
+
+.container {
+  padding: 0 32px !important;
+  @include ScrollBarMixin;
+}

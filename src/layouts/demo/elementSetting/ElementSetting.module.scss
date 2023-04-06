@@ -1,0 +1,36 @@
+.textinputheight .textselectheight{
+  display: inherit;
+}
+
+.textselectheight{
+  margin-bottom: 24px;
+}
+
+.textinputheight .textselectheight>div{
+  height: 40px;
+  padding-left: 27px;
+  align-items: center;
+  display: flex;  
+}
+.textinputheight .textselectheight > div > input{
+  height:40px;
+}
+.textinputheight{
+  margin-bottom: 24px;
+}
+.textinputheight input{
+  height:40px;
+  width:656px;
+  padding:0px;
+}
+
+.container--modal__heading{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}

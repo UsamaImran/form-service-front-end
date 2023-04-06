@@ -1,0 +1,20 @@
+@import './color.scss';
+
+@mixin ScrollBarMixin {
+    &::-webkit-scrollbar {
+      width: 8px !important;
+      background-color: #fff !important;
+      border-radius: 29px !important;
+    }
+    &::-webkit-scrollbar-track {
+      background: #00000000 !important;
+      border-radius: 10px !important;
+      border-style: none !important;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $TERTIARY_GREY !important;
+      border-radius: 10px !important;
+    }
+  }

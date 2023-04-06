@@ -1,0 +1,81 @@
+@import '../../../styles/color.scss';
+
+.mainLayout {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $WHITE;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $SECONDARY_GREY;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $PRIMARY_GREY;
+  }
+}
+.headerTitle {
+  font-family: Open Sans !important;
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  line-height: 24px !important;
+  display: flex;
+  color: $PRIMARY_BLACK;
+  margin-bottom: 24px !important;
+}
+
+// BasicSetting model design
+
+.draggableList {
+  height: 160px;
+  overflow-y: scroll;
+  border: 1px solid $PRIMARY_GREY;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.draggableListContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.draggableListContainer > img {
+  margin-top: 10px;
+}
+
+.chipHeading {
+  color: $TERTIARY_BLACK;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chipContainer {
+  border: 1px solid $PRIMARY_GREY;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.buttonWrap {
+  width: calc(100% + 20px);
+  position: sticky;
+  bottom: -4px;
+  padding: 8px 0;
+  background-color: #fff;
+  display: block;
+  z-index: 9;
+  margin: 0 -10px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}

@@ -1,0 +1,22 @@
+.container--heading__h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #333333;
+  }
+  .close-cross {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .avatar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  

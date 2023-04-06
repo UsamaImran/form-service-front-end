@@ -1,0 +1,65 @@
+.mainTable::-webkit-scrollbar {
+  display: none;
+}
+
+.dragCell {
+  padding: 0 !important;
+  border-bottom: none !important;
+}
+
+.borderRight {
+  border-left: 1px solid #cccccc;
+  > span > p > div {
+    justify-content: center;
+  }
+}
+
+.firstCell .dragImg,
+.firstCell p {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.dragImg {
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstCell .dragImg {
+  margin: 10px auto auto -19px;
+}
+
+.sortTableRow:hover .hidden {
+  visibility: visible !important;
+  z-index: 99999 !important;
+}
+
+.sortTableRow {
+  display: block;
+  width: 100%;
+}
+
+.firstCell p {
+  margin-left: 10px;
+  width: 150px;
+}
+
+.firstCell .deleteImg,
+.firstCell p {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: auto auto;
+}
+
+.firstCell .deleteImg {
+  margin: -19px auto auto -10px;
+}
+
+.sortableHelper {
+  z-index: 9999 !important;
+}

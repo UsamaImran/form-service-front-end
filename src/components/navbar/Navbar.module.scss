@@ -1,0 +1,164 @@
+@import '../../styles/color.scss';
+
+.container {
+  width: 100%;
+  background: $TERTIARY_GREY;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.leftCol {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  max-width: 250px;
+  width: 100%;
+}
+
+.sidebarIcon {
+  margin-right: 16px;
+  display: flex;
+  cursor: pointer;
+  &:hover {
+    .menuIconWrap {
+      display: none;
+    }
+    .openMenuIcon {
+      display: flex;
+    }
+  }
+}
+
+.menuIconWrap {
+  display: flex;
+}
+
+.openMenuIcon {
+  display: none;
+  width: 32px;
+  transform: scale(-1);
+}
+
+.menuIcon {
+  display: none;
+  margin-right: 16px;
+}
+
+.logo {
+  height: 40px;
+  font-family: Open Sans;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  @media screen and(max-width:600px) {
+    font-size: 24px;
+  }
+  span {
+    color: $PRIMARY_BUTTON;
+    font-weight: 700;
+  }
+}
+
+.innerContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  .leftPanel {
+    border-radius: 25px;
+    background-color: #fff;
+  }
+}
+
+.rightPanel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blueBell {
+  background-color: $PRIMARY_BUTTON;
+  border-radius: 50%;
+  width: 16px;
+  font-size: 12px;
+  height: 16px;
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  color: #fff;
+}
+
+.blueBell sup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.profile {
+  background-color: $SECONDARY_GREY !important;
+  font-family: Open Sans !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #000 !important;
+  margin: 0px 16px;
+}
+
+.divider {
+  border-color: $PRIMARY_GREY !important;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 14px;
+  color: $PRIMARY_BLACK;
+  line-height: 16px;
+  padding-left: 16px;
+}
+.subHeading {
+  display: block;
+  margin: 4px 0px 24px 0px;
+  font-weight: 400;
+  font-size: 12px;
+  color: $SECONDARY_BLACK;
+  padding-left: 16px;
+}
+.menuOptions {
+  font-size: 14px;
+  line-height: 16px;
+  color: $PRIMARY_BLACK;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and(max-width:768px) {
+  .sidebarIcon {
+    display: none;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .menuIcon {
+    display: flex;
+  }
+  .innerContainer {
+    margin-left: 0;
+  }
+}
+
+.searchAutoComplete {
+  > div {
+    > div {
+      > div {
+        @media screen and(max-width:991px) {
+          min-width: 220px !important;
+        }
+      }
+    }
+  }
+}
+
+.info-container {
+  display: flex;
+}

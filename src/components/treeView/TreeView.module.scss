@@ -1,0 +1,11 @@
+@import '../../styles/color.scss';
+.note {
+  color: $PRIMARY_GREY;
+}
+.tree-item-container {
+  display: flex;
+  align-items: center;
+}
+.actions {
+  cursor: pointer;
+}

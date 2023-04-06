@@ -1,0 +1,20 @@
+.container--ConfirmationPopup{
+  height: 890px;
+  width: 720px; 
+  margin: auto;
+  background-color: white;
+  padding-left: 32px;
+}
+.container--buttonContainer{
+  height: 53px;
+  background: #FFFFFF;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+
+}
+.container--buttonContainer--innerContainer{
+  align-items: center;
+  display: flex;
+  padding-right: 23px;
+}

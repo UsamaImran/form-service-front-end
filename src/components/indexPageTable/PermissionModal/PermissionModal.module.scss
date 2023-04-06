@@ -1,0 +1,44 @@
+@import '../../../styles/color.scss';
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 0.85em;
+  > p {
+    font-size: 14px;
+    line-height: 16px;
+    color: $PRIMARY_BLACK;
+  }
+}
+
+.permissionTypes {
+  margin-top: 64px;
+  width: 100%;
+  align-items: center;
+}
+
+.addPermission {
+  color: $PRIMARY_GREY !important;
+  background-color: $TERTIARY_GREY !important;
+}
+
+.user--container {
+  margin-top: 20px;
+  height: 380px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.userSlot {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin-bottom: 16px;
+}
+
+.userAvtar {
+  display: flex !important;
+  align-items: center !important;
+}

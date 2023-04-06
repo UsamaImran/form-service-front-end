@@ -1,0 +1,42 @@
+@import '../../../styles/color.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 4px;
+  color: $TERTIARY_BLACK;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.required {
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #e94545;
+  margin-left: 4px;
+}
+
+.infoIcon {
+  margin-left: 4px;
+}
+
+.containerClassName {
+  input {
+    padding: 12px 8px;
+  }
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-width: 1px !important;
+}

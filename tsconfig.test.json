@@ -1,0 +1,9 @@
+//This file is workaround for jest as jest demands jsx to be react but when we run next dev it changes
+//from react to preserve so by using different file with overriding of jsx property for jest will fix
+//that issue. Now next and jest both would be happy.
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react"
+  }
+}

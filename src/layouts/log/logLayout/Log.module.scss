@@ -1,0 +1,52 @@
+@import '../../../styles/color.scss';
+.parent-container {
+  padding: 0 15px;
+}
+
+.container {
+  font-family: 'Open Sans';
+  min-height: 300px;
+  max-height: 1200px;
+  width: 100%;
+}
+.back-button{
+  color: $PRIMARY_BUTTON;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+}
+.ml-1 {
+  margin-left: 6px;
+}
+
+.entity-name {
+  color: #0099cc !important;
+  cursor: pointer !important;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.two-lines {
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  line-height: 18px !important;
+  padding-top: 13px !important;
+  white-space: unset !important;
+}
+
+.log-notes {
+  cursor: pointer;
+}
+
+.log-notes:hover {
+  color: #0099cc;
+}

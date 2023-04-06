@@ -1,0 +1,17 @@
+@import '../../styles/vars.scss';
+@import '../../styles/color.scss';
+.label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  padding-bottom: 4px;
+  color: $TERTIARY_BLACK;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: $TERTIARY_BLACK;
+}

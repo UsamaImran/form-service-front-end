@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__label{
+  font-weight: 600;
+  font-size: 12px;
+  color:#8C8C8C
+}
+
+.container__error{
+  font-weight: 500;
+  color:red;
+}
+
+
+.nestedHover:hover{
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nestedHover{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.container__expandIcon--color{
+  color:#bfbfbf
+}
